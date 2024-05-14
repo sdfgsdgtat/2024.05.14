@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    function 함수1(x) {
+        console.log(x); // 입력된 값을 콘솔에 출력
+        return x; // 값을 반환
+    }
+
+    function 처리() {
+        const 입력값 = document.querySelector('.x').value; // 입력 필드의 값을 가져옴
+        함수1(입력값); // 함수에 값 전달
+    }
+</script>
+
+<input class="x" type="text">
+<button onclick="처리()">전송</button>
+
+</body>
+</html>
